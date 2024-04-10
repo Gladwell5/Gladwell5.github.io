@@ -8,8 +8,6 @@ TIMEZONE = 'Europe/Belfast'
 
 DEFAULT_LANG = 'en'
 
-THEME = '//Users/eoin/Repos/pelican-themes/sundown'
-
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
