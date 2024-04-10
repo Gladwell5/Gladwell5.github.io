@@ -31,5 +31,8 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
+PELICAN_THEME_REPO = "https://github.com/keningle/pelican-sundown"
+PELICAN_THEME_NAME = "pelican-sundown"
+
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
