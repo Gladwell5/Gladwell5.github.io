@@ -1,75 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Pelican" />
-        <title>Gladwell5 - Review</title>
-        <link rel="stylesheet" href="https://gladwell5.github.io/theme/css/main.css" />
-        <link href="https://gladwell5.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gladwell5 Atom Feed" />
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Gladwell5 - ReviewGladwell5</title>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://gladwell5.github.io/">Gladwell5</a></h1>
-                <nav><ul>
-                    <li class="active"><a href="https://gladwell5.github.io/category/review.html">Review</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <link rel="stylesheet" href="/theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <div class="title"><a href="/">Gladwell5 </a></div>
+        <div class="sub-title"></div>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="https://gladwell5.github.io/test-review.html">Test Review</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2023-12-03T10:20:00+00:00">
-                Published: Sun 03 December 2023
-        </abbr>
+<p>
+  <div class="view"><a href="/archives.html">Archives</a></div>
+</p>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://gladwell5.github.io/author/gladwell5.html">Gladwell5</a>
-        </address>
-<p>In <a href="https://gladwell5.github.io/category/review.html">Review</a>.</p>
+<!-- Social links -->
+<div class="social">
+<h4>Follow Me</h4>
+<ul>
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+</ul>
+</div>
 
-</footer><!-- /.post-info --><p>Following is a review of my favorite mechanical keyboard.</p>                </article>
-            </aside><!-- /#featured -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://gladwell5.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+      </header>
+      <section>
+      <div class="front-title"><a href="/test-review.html">Test Review</a></div>
+<p>
+<small>
+<abbr class="published" title="2023-12-03T10:20:00+00:00">
+  Sun 03 December 2023
+</abbr> | 
+ -- (<a href="/test-review.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>Following is a review of my favorite mechanical keyboard.</p> 
+      <div class="read-more"><a href="/test-review.html">read more...</a></div>
+      <hr />
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
-
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
-
-                <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
-
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3R6H8FS9B9"></script>
+      </section>
+      <footer>
+        <p><small>&copy; Gladwell5 &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
 
-    gtag('config', 'G-3R6H8FS9B9');
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
     </script>
-
-</body>
+  </body>
 </html>

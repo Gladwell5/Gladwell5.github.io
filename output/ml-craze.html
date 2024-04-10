@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>ML CrazeGladwell5</title>
+
+    <link rel="stylesheet" href="/theme/css/main.css">
+    <link rel="stylesheet" href="/theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <div class="title"><a href="/">Gladwell5 </a></div>
+        <div class="sub-title"></div>
+
+<p>
+  <div class="view"><a href="/archives.html">Archives</a></div>
+</p>
+
+<!-- Social links -->
+<div class="social">
+<h4>Follow Me</h4>
+<ul>
+    <li><a href="#">You can add links in your config file</a></li>
+    <li><a href="#">Another social link</a></li>
+</ul>
+</div>
+
+      </header>
+      <section>
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        ML Craze
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+<abbr class="published" title="2023-05-25T18:45:00+01:00">
+  Thu 25 May 2023
+</abbr> | 
+ -- (<a href="/ml-craze.html" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>Transformers are the underlying technical reason but for me, alignment/accessibility and economics are also part of the answer.</p>
+<p>Training models is very expensive and time-consuming and we weren't totally sure how well it would work to keep doing what we'd been doing. OpenAI pushed ahead with this idea of bigger and bigger models and spent millions on it and eventually trained GPT-3, which was surprisingly good at generating text compared to earlier models. Once they proved that approach worked, everyone else knew it too and they could be more sure that they would have something to show for their money. That's the economic bit.</p>
+<p>The alignment bit is that OpenAI did a whole additional training process (with humans in the loop) on GPT-3 to turn it into ChatGPT. GPT-3 could do one thing - generate follow-on text from a starting prompt. With ChatGPT, we saw that prompts could be anything - questions, instructions, etc. and the model can be adjusted to generate in a way that responds to the prompt (rather than just continue on). This made certain language understanding/processing/generation tasks massively more accessible.</p>
+<p>With a large instructable general model, the user gets to decide (at prompt time) what they want to do with it instead of needing to pick and train a single smaller model per task in advance. Obviously this depends on the task, typically the more specific a model is, the better it performs.</p>
+<p>Basically OpenAI spent the money and effort to prove you could make a model like ChatGPT and they shared the process so anyone could (in theory) do the same. At that point, people could begin looking at ways to make it faster, cheaper and better and they could use GPT (or specific tests) to benchmark the performance and understand more about what matters most in the training process.</p>
+<p>TL;DR Once the first really impressive model was made, we were surer about the right process and that knowledge spread fast.</p>
+    </div><!-- /.entry-content -->
+  </article>
+</section>
+      </section>
+      <footer>
+        <p><small>&copy; Gladwell5 &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
