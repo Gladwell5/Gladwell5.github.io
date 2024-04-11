@@ -1,3 +1,7 @@
 site_name: Blogward
 theme:
   name: material
+extra:
+  analytics:
+    provider: google
+    property: G-3R6H8FS9B9
