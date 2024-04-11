@@ -1,0 +1,7 @@
+authors:
+  gladwell:
+    name: Gladwell      # Author name
+    description: Owner  # Author description
+    avatar: url"         # Author avatar
+    slug: url           # Author profile slug
+    url: url            # Author website URL
